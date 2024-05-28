@@ -1,0 +1,26 @@
+{
+  "contactHero": {
+    "formSubtitle": "Fill the form and we'll be in touch as soon as possible",
+    "placeholders": {
+      "email": "Email",
+      "name": "Full Name",
+      "number": "Number"
+    },
+    "sectionTitle1": "Get in",
+    "sectionTitle2": "Touch with Us!",
+    "servicesLabel": "Services",
+    "servicesOptions": {
+      "ai_ml": "AI & Machine Learning",
+      "branding": "Branding",
+      "default": "Which Service",
+      "email_marketing": "Email Marketing",
+      "google_ads": "Google Ads",
+      "logo_designing": "Logo Designing",
+      "media_planning": "Media Planning",
+      "mobile_app_development": "Mobile App Development",
+      "social_media_marketing": "Social Media Marketing",
+      "web_development": "Web Development"
+    },
+    "submitButton": "Submit"
+  }
+}

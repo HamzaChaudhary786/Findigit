@@ -1,0 +1,26 @@
+{
+  "about": {
+    "caseStudies": "Case Studies",
+    "ourTeam": "Our team",
+    "title": "About",
+    "whoWeAre": "Who we are"
+  },
+  "aboutUs": "FinDigit stands as a leading professional marketing company globally, specializing in a comprehensive range of services tailored to meet the marketing requirements of businesses in Bahrain.",
+  "enterEmail": "Enter your email here",
+  "quickLinks": {
+    "contactUs": "Contact Us",
+    "home": "Home",
+    "testimonials": "Testimonials",
+    "title": "Quick Links"
+  },
+  "rightsReserved": "© FinDigit 2024. All rights reserved.",
+  "services": {
+    "eCommerce": "E-commerce",
+    "mobileApps": "Mobile Apps",
+    "softwareDevelopment": "Software Development",
+    "title": "Services",
+    "webDevelopment": "Web Development"
+  },
+  "stayUpdated": "Stay updated on how the future of technology is shaping!",
+  "subscribe": "Subscribe"
+}

@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "button": {
+      "text": "Contact Us"
+    },
+    "title": {
+      "digital": "digital",
+      "experiences": "experiences",
+      "ideas": "ideas",
+      "transformInto": "transforms into",
+      "where": "Where"
+    }
+  }
+}

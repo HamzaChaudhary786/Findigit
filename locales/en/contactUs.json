@@ -1,0 +1,17 @@
+{
+  "contactUs": {
+    "call": {
+      "contactInfo": "+973 3755 7803",
+      "title": "Call"
+    },
+    "email": {
+      "contactInfo": "info@findigit.org",
+      "title": "Email"
+    },
+    "message": {
+      "contactInfo": "+973 3755 7803",
+      "title": "Message"
+    },
+    "sectionTitle": "Reach to Our Presence Across The World"
+  }
+}

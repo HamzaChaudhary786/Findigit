@@ -1,0 +1,26 @@
+{
+  "contactHero": {
+    "formSubtitle": "املأ النموذج، وسنتواصل معك في أقرب وقت ممكن",
+    "placeholders": {
+      "email": "البريد الإلكتروني",
+      "name": "الاسم الكامل",
+      "number": "الرقم"
+    },
+    "sectionTitle1": "تواصل",
+    "sectionTitle2": "معنا!",
+    "servicesLabel": "الخدمات",
+    "servicesOptions": {
+      "ai_ml": "الذكاء الاصطناعي وتعلم الآلة",
+      "branding": "براندينج",
+      "default": "أي خدمة",
+      "email_marketing": "التسويق عبر البريد الإلكتروني",
+      "google_ads": "إعلانات جوجل",
+      "logo_designing": "تصميم الشعارات",
+      "media_planning": "تخطيط الوسائط",
+      "mobile_app_development": "تطوير تطبيقات الهواتف الذكية",
+      "social_media_marketing": "التسويق عبر وسائل التواصل الاجتماعي",
+      "web_development": "تطوير المواقع الإلكترونية"
+    },
+    "submitButton": "إرسال"
+  }
+}
