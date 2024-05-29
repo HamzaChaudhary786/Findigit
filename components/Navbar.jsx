@@ -145,7 +145,7 @@ const Navbar = () => {
                     : 'text-white drop-shadow-xl shadow-white'
                 } transition  font-medium hover:underline hover:text-yellow-400`}
               >
-                <a href={getLocalizedPath('about')}>{t('about')}</a>
+                <a href={getLocalizedPath('about')}>{t('about us')}</a>
               </li>
             </ul>
           </div>
