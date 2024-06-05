@@ -1,5 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 import { mailOptions, transporter } from '@/config/nodemailer';
 
 const CONTACT_MESSAGE_FIELDS = {
@@ -11,14 +9,13 @@ const CONTACT_MESSAGE_FIELDS = {
 
 const generateEmailContent = (data) => {
   const stringData = Object.entries(data).reduce(
-    (str, [key, val]) =>
-      (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val} \n \n`),
+    (str, [key, val]) => (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val} \n\n`),
     ''
   );
 
   const htmlData = Object.entries(data).reduce(
     (str, [key, val]) =>
-      (str += `<h1 class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key]}</h1>
+    (str += `<h1 class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key]}</h1>
       <p class="form-answer" align="left">${val}</p>`),
     ''
   );
@@ -31,23 +28,28 @@ const generateEmailContent = (data) => {
 const handler = async (req, res) => {
   if (req.method === 'POST') {
     const data = req.body;
+
     if (!data.name || !data.number || !data.email || !data.services) {
-      return res.status(400).json({ message: 'Bad Request' });
+      return res.status(400).json({ message: 'Bad Request: Missing required fields' });
     }
 
     try {
+      const emailContent = generateEmailContent(data);
+      console.log('Email Content:', emailContent); // Log email content for debugging
+
       await transporter.sendMail({
         ...mailOptions,
-        ...generateEmailContent(data),
+        ...emailContent,
         subject: 'New Contact Form Submission',
       });
+      return res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
-      console.log(error);
-      return res.status(400).json({ message: error.message });
+      console.error('Error sending email:', error);
+      return res.status(500).json({ message: `Internal Server Error: ${error.message}` });
     }
+  } else {
+    return res.status(405).json({ message: 'Method Not Allowed: Only POST requests are accepted' });
   }
-
-  return res.status(400).json({ message: 'Bad Request' });
 };
 
 export default handler;
